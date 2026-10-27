@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+        /* Marca el documento como "con JS" y activa un failsafe por si el preloader no termina */
+        document.documentElement.className = 'js';
+        setTimeout(function () { document.documentElement.classList.add('is-loaded'); }, 9000);
+    </script>
+
+    <!-- ═══════ SEO ═══════ -->
+    <title>TAK On Time | Transporte Médico San Diego ⇄ Tijuana 24/7</title>
+    <meta name="description" content="Transporte médico, turismo médico y traslados privados entre San Diego y Tijuana en SUVs sanitizadas, con choferes bilingües. Servicio 24/7 y aeropuertos SAN / TIJ. Cotiza por WhatsApp.">
+    <meta name="keywords" content="transporte médico Tijuana, transporte médico San Diego, traslado San Diego Tijuana, turismo médico Tijuana, transporte privado Tijuana, traslado aeropuerto Tijuana, transportación pacientes, medical transportation Tijuana, San Diego to Tijuana transportation, medical tourism Tijuana">
+    <meta name="author" content="TAK On Time">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#030d14">
+    <meta name="color-scheme" content="dark light">
+    <!-- TODO producción: reemplazar por el dominio final en canonical, og:url y og:image -->
+    <!-- <link rel="canonical" href="https://www.tu-dominio.com/"> -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="TAK On Time">
+    <meta property="og:title" content="TAK On Time | Transporte médico San Diego ⇄ Tijuana">
+    <meta property="og:description" content="Cruza con calma, llega a tiempo. SUVs sanitizadas, choferes bilingües y servicio 24/7 entre San Diego y Tijuana.">
+    <meta property="og:image" content="img/tak-fleet-suv.jpg">
+    <meta property="og:image:alt" content="SUV blanca de la flota TAK On Time lista para el traslado">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TAK On Time | Transporte médico San Diego ⇄ Tijuana">
+    <meta name="twitter:description" content="Transporte médico y privado transfronterizo. Choferes bilingües, unidades sanitizadas, 24/7.">
+    <meta name="twitter:image" content="img/tak-fleet-suv.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23061621'/%3E%3Cpath d='M32 10c-8.8 0-16 6.9-16 15.4 0 11 12.6 23.4 15 25.8.6.6 1.4.6 2 0 2.4-2.4 15-14.8 15-25.8C48 16.9 40.8 10 32 10z' fill='none' stroke='%2322b8e8' stroke-width='4'/%3E%3Ccircle cx='32' cy='25' r='6' fill='none' stroke='%2322b8e8' stroke-width='4'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <noscript><style>#loader{display:none!important}</style></noscript>
+
+    <!-- ═══════ DATOS ESTRUCTURADOS (SEO local) ═══════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "TaxiService"],
+      "name": "TAK On Time – Medical Transportation",
+      "alternateName": "TAK Medical Transportation",
+      "description": "Transporte médico, turismo médico y traslados privados entre San Diego, California y Tijuana, Baja California. SUVs sanitizadas, choferes bilingües y atención 24/7.",
+      "slogan": "Your time is our priority",
+      "image": "img/tak-fleet-suv.jpg",
+      "telephone": "+526643752622",
+      "email": "transportationtak@gmail.com",
+      "priceRange": "$85 – $130 USD",
+      "currenciesAccepted": "USD",
+      "address": { "@type": "PostalAddress", "addressLocality": "Tijuana", "addressRegion": "B.C.", "addressCountry": "MX" },
+      "areaServed": [
+        { "@type": "City", "name": "San Diego" },
+        { "@type": "City", "name": "Tijuana" }
+      ],
+      "knowsLanguage": ["es", "en"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00", "closes": "23:59"
+      },
+      "sameAs": ["https://www.instagram.com/tak_transportation"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cuánto cuesta un traslado entre San Diego y Tijuana?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Viaje sencillo SD–TJ: $85 USD. Ida y vuelta SD–TJ: $130 USD. Tarifa por paciente con 1 acompañante, hasta 25 millas / 40 km. El pase médico tiene un cargo adicional de $60 USD." } },
+        { "@type": "Question", "name": "¿Atienden aeropuertos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Recogemos en aeropuertos (SAN / TIJ) y te llevamos a hospitales, clínicas, hoteles o departamentos." } },
+        { "@type": "Question", "name": "¿Los choferes hablan inglés?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Todo nuestro personal es bilingüe, con dominio fluido de inglés y español." } },
+        { "@type": "Question", "name": "¿Tienen servicio las 24 horas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Atendemos 24 horas, 7 días a la semana, para responder a itinerarios médicos y vuelos a cualquier hora." } },
+        { "@type": "Question", "name": "¿Cómo reservo mi traslado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp al +52 664 375 2622 o llena el formulario del sitio. Confirmamos tarifa, horario y punto de recogida." } }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<!-- ═══════ SPRITE DE ICONOS (SVG inline, sin dependencias) ═══════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+        <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#6fd6f5"/>
+            <stop offset="0.5" stop-color="#22b8e8"/>
+            <stop offset="1" stop-color="#0f8fa6"/>
+        </linearGradient>
+    </defs>
+    <!-- Logo: pin con anillo base (recreado en vectorial a partir del flyer) -->
+    <symbol id="i-mark" viewBox="0 0 64 72">
+        <ellipse cx="32" cy="60" rx="27" ry="8.5" fill="none" stroke="url(#g-brand)" stroke-width="3.4"/>
+        <path d="M32 5C20.4 5 11 14 11 25.2c0 13.7 15.5 28 19.3 31.4 1 .9 2.4.9 3.4 0C37.5 53.2 53 38.9 53 25.2 53 14 43.6 5 32 5z" fill="none" stroke="url(#g-brand)" stroke-width="5.6" stroke-linejoin="round"/>
+        <circle cx="32" cy="25" r="9.2" fill="none" stroke="url(#g-brand)" stroke-width="5"/>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+    <symbol id="i-case" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></symbol>
+</svg>
+
+<!-- ═══════ PRELOADER ═══════ -->
+<div id="loader" role="status" aria-live="polite" aria-label="Cargando TAK On Time">
+    <div class="ld-curtain ld-top"></div>
+    <div class="ld-curtain ld-bot"></div>
+    <div class="ld-core">
+        <div class="ld-emblem">
+            <span class="ld-ring r1"></span><span class="ld-ring r2"></span><span class="ld-ring r3"></span>
+            <span class="ld-spin"></span>
+            <svg class="ld-mark" viewBox="0 0 64 72" aria-hidden="true">
+                <ellipse pathLength="1" cx="32" cy="60" rx="27" ry="8.5" class="d1"/>
+                <path pathLength="1" class="d2" d="M32 5C20.4 5 11 14 11 25.2c0 13.7 15.5 28 19.3 31.4 1 .9 2.4.9 3.4 0C37.5 53.2 53 38.9 53 25.2 53 14 43.6 5 32 5z"/>
+                <circle pathLength="1" class="d3" cx="32" cy="25" r="9.2"/>
+            </svg>
+        </div>
+        <div class="ld-word" aria-hidden="true"><span class="ld-tak">TAK</span><span class="ld-ot">ON TIME</span></div>
+        <div class="ld-meta">
+            <span class="ld-status mono" id="ld-status">Calibrando ruta San Diego ⇄ Tijuana…</span>
+            <div class="ld-bar"><i id="ld-bar"></i></div>
+            <span class="ld-pct mono"><b id="ld-pct">0</b>%</span>
+        </div>
+    </div>
+</div>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
+<div class="scroll-progress" aria-hidden="true"><i id="scroll-progress"></i></div>
+<div class="cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"><span></span></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ═══════ NAVBAR ═══════ -->
+<header class="nav" id="nav">
+    <div class="nav-pill">
+        <a href="#inicio" class="brand" aria-label="TAK On Time — Inicio">
+            <svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+            <span class="brand-txt"><b>TAK</b><small>ON TIME</small></span>
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+            <a href="#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="#flota" data-i18n="nav.fleet">Flota</a>
+            <a href="#proceso" data-i18n="nav.process">Cómo funciona</a>
+            <a href="#tarifas" data-i18n="nav.pricing">Tarifas</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="nav-actions">
+            <div class="lang" role="group" aria-label="Idioma / Language">
+                <button type="button" data-lang="es" aria-pressed="true">ES</button>
+                <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                <i class="lang-thumb"></i>
+            </div>
+            <a class="btn btn-primary btn-sm nav-cta" data-wa="nav" href="https://wa.me/526643752622" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="nav.cta">Reservar ahora</span>
+            </a>
+            <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" data-i18n-aria="nav.menu"><i></i><i></i></button>
+        </div>
+    </div>
+</header>
+
+<!-- Menú móvil -->
+<div class="menu" id="menu" aria-hidden="true">
+    <div class="menu-bg"></div>
+    <nav class="menu-nav" aria-label="Menú móvil">
+        <a href="#servicios"><span class="mono">01</span><span data-i18n="nav.services">Servicios</span></a>
+        <a href="#flota"><span class="mono">02</span><span data-i18n="nav.fleet">Flota</span></a>
+        <a href="#proceso"><span class="mono">03</span><span data-i18n="nav.process">Cómo funciona</span></a>
+        <a href="#tarifas"><span class="mono">04</span><span data-i18n="nav.pricing">Tarifas</span></a>
+        <a href="#contacto"><span class="mono">05</span><span data-i18n="nav.contact">Contacto</span></a>
+    </nav>
+    <div class="menu-foot">
+        <a class="btn btn-wa btn-lg" data-wa="nav" href="https://wa.me/526643752622" target="_blank" rel="noopener">
+            <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="menu.cta">Hablar con un asesor</span>
+        </a>
+        <p class="mono menu-contact">+52 664 375 2622<br>transportationtak@gmail.com</p>
+    </div>
+</div>
+
+<main id="main">
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="inicio" class="hero is-dark" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
+        <div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div>
+        <div class="hero-grid"></div>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-orbit"><i></i><i></i><i></i><svg><use href="#i-mark"/></svg></div>
+        <div class="hero-vignette"></div>
+    </div>
+
+    <div class="container hero-inner">
+        <div class="hero-copy">
+            <p class="hero-kicker hx" style="--i:0">
+                <span class="dot"></span>
+                <span data-i18n="hero.kicker">Transporte médico y privado · San Diego ⇄ Tijuana</span>
+            </p>
+            <h1 id="hero-title" class="hero-title" data-split data-i18n="hero.title">Tu traslado entre San Diego y Tijuana, <span class="grad">siempre a tiempo.</span></h1>
+            <p class="hero-sub hx" style="--i:3" data-i18n="hero.sub">Transporte médico y privado transfronterizo en SUVs sanitizadas, con choferes bilingües y atención personalizada las 24 horas.</p>
+            <div class="hero-cta hx" style="--i:4">
+                <a class="btn btn-primary btn-lg btn-mag" data-wa="hero" href="https://wa.me/526643752622?text=Hola%20TAK%20On%20Time%2C%20quiero%20reservar%20mi%20traslado." target="_blank" rel="noopener">
+                    <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="hero.cta1">Quiero mi traslado</span><i class="btn-shine"></i>
+                </a>
+                <a class="btn btn-ghost btn-lg btn-mag" href="#tarifas">
+                    <span data-i18n="hero.cta2">Ver tarifas</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+            </div>
+            <ul class="hero-trust hx" style="--i:5">
+                <li><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg><span data-i18n="hero.t1">Choferes bilingües</span></li>
+                <li><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg><span data-i18n="hero.t2">Unidades sanitizadas</span></li>
+                <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="hero.t3">Servicio 24/7</span></li>
+            </ul>
+        </div>
+
+        <div class="hero-visual hx" style="--i:3">
+            <div class="dispatch-wrap">
+                <span class="fchip fc1"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="hero.f1">Viaje seguro</span></span>
+                <span class="fchip fc2"><b>+10</b><span data-i18n="hero.f2">años de experiencia</span></span>
+                <span class="fchip fc3"><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg>ES ⇄ EN</span>
+
+                <article class="dispatch" data-tilt aria-label="Vista de la ruta San Diego a Tijuana">
+                    <header class="dp-head">
+                        <span class="dp-live"><i></i><span data-i18n="dp.status">Ruta activa</span></span>
+                        <span class="dp-id mono">SD ⇄ TJ</span>
+                    </header>
+                    <div class="dp-map">
+                        <svg class="route-svg" viewBox="0 0 400 480" role="img" aria-label="Mapa estilizado de la ruta de San Diego a Tijuana">
+                            <defs>
+                                <linearGradient id="g-route" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#6fd6f5"/><stop offset="1" stop-color="#22b8e8"/>
+                                </linearGradient>
+                                <filter id="f-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+                            </defs>
+                            <g class="map-dots" id="map-dots"></g>
+                            <g class="map-contours" fill="none">
+                                <path d="M-10 120c70-40 120 30 200 0s150-60 230-20"/>
+                                <path d="M-10 190c80-30 110 50 210 20s140-70 220-30"/>
+                                <path d="M-10 330c60 30 130-40 210-10s150 50 220 10"/>
+                                <path d="M-10 400c70 20 120-30 200 0s150 30 230 0"/>
+                            </g>
+                            <line class="border-line" x1="30" y1="245" x2="370" y2="245"/>
+                            <path id="route-base" class="route-base" d="M110 70C110 150 290 150 290 245S140 340 140 440"/>
+                            <path id="route-glow" class="route-glow" d="M110 70C110 150 290 150 290 245S140 340 140 440" filter="url(#f-glow)"/>
+                            <path id="route-trail" class="route-trail" d="M110 70C110 150 290 150 290 245S140 340 140 440"/>
+                            <g class="node" transform="translate(110 70)"><circle class="pulse" r="10"/><circle class="pulse p2" r="10"/><circle class="core" r="6"/></g>
+                            <g class="node" transform="translate(290 245)"><circle class="pulse" r="10"/><circle class="pulse p2" r="10"/><circle class="core amber" r="6"/></g>
+                            <g class="node" transform="translate(140 440)"><circle class="pulse" r="10"/><circle class="pulse p2" r="10"/><circle class="core" r="6"/></g>
+                            <g id="route-car" class="route-car"><circle r="14" class="car-halo"/><circle r="6.5" class="car-dot"/></g>
+                            <g id="route-car2" class="route-car back"><circle r="4.5" class="car-dot"/></g>
+                        </svg>
+                        <span class="tag tg1 mono">SAN · San Diego</span>
+                        <span class="tag tg2 mono" data-i18n="dp.border">Cruce fronterizo</span>
+                        <span class="tag tg3 mono">TIJ · Tijuana</span>
+                    </div>
+                    <footer class="dp-foot">
+                        <div class="dp-times">
+                            <div><small class="mono" data-i18n="dp.pickup">Recogida</small><strong>08:30</strong></div>
+                            <div class="dp-bar" aria-hidden="true"><i id="dp-bar"></i></div>
+                            <div><small class="mono" data-i18n="dp.arrive">Llegada a tu cita</small><strong>09:10</strong></div>
+                        </div>
+                        <div class="dp-chips">
+                            <span><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg><span data-i18n="dp.c1">Chofer bilingüe</span></span>
+                            <span><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg><span data-i18n="dp.c2">Unidad sanitizada</span></span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-bar hx" style="--i:6">
+        <a class="scroll-cue" href="#nosotros" aria-label="Desplázate para descubrir más" data-i18n-aria="hero.scroll.aria">
+            <span class="sc-mouse"><i></i></span><span class="mono" data-i18n="hero.scroll">Descubre</span>
+        </a>
+        <div class="hero-clock mono" aria-live="off">
+            <span class="hc-dot"></span>
+            <span data-i18n="hero.clock">Hora local · San Diego / Tijuana</span>
+            <b id="hero-clock">--:--:--</b>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ MARQUEE ═══════════════════ -->
+<section class="marquee is-teal" aria-hidden="true">
+    <div class="mq mq-big" data-marquee="-1">
+        <div class="mq-track">
+            <span>SAN DIEGO ⇄ TIJUANA</span><i class="mq-sep"></i><span>ON TIME</span><i class="mq-sep"></i><span>SAFE RIDES</span><i class="mq-sep"></i><span>RELIABLE SERVICE</span><i class="mq-sep"></i>
+        </div>
+    </div>
+    <div class="mq mq-sm" data-marquee="1">
+        <div class="mq-track">
+            <span>Comfort</span><i class="mq-sep"></i><span>Safety</span><i class="mq-sep"></i><span>Punctuality</span><i class="mq-sep"></i><span>Bilingual drivers</span><i class="mq-sep"></i><span>Sanitized units</span><i class="mq-sep"></i><span>24/7</span><i class="mq-sep"></i><span>Your time, our priority</span><i class="mq-sep"></i>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ MANIFIESTO ═══════════════════ -->
+<section id="nosotros" class="section manifesto is-light" aria-labelledby="man-eyebrow">
+    <div class="container">
+        <p id="man-eyebrow" class="eyebrow" data-scramble data-i18n="man.eyebrow">Quiénes somos</p>
+        <p class="man-text" id="man-text" data-i18n="man.text">Un viaje de salud no debería sentirse como un trámite. En TAK conectamos <mark>San Diego</mark> con <mark>Tijuana</mark> en SUVs sanitizadas, con choferes bilingües que dominan cada ruta transfronteriza, para que tú pienses en tu cita y nosotros en <mark>tu tiempo</mark>.</p>
+
+        <div class="man-grid">
+            <article class="pillar" data-reveal="up" style="--i:0">
+                <span class="pillar-ic"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span>
+                <h3 data-i18n="man.p1t">Segura</h3>
+                <p data-i18n="man.p1">Conductores profesionales y responsables, con amplio conocimiento de las rutas transfronterizas.</p>
+            </article>
+            <article class="pillar" data-reveal="up" style="--i:1">
+                <span class="pillar-ic"><svg class="ic" aria-hidden="true"><use href="#i-pulse"/></svg></span>
+                <h3 data-i18n="man.p2t">Amigable</h3>
+                <p data-i18n="man.p2">Trato humano, cordial y de máximo respeto para pacientes, familiares y acompañantes.</p>
+            </article>
+            <article class="pillar" data-reveal="up" style="--i:2">
+                <span class="pillar-ic"><svg class="ic" aria-hidden="true"><use href="#i-steth"/></svg></span>
+                <h3 data-i18n="man.p3t">Profesional</h3>
+                <p data-i18n="man.p3">Más de 10 años de experiencia en transporte médico y traslados privados.</p>
+            </article>
+        </div>
+
+        <div class="man-cta" data-reveal="up">
+            <p data-i18n="man.cta.p">Cada viaje es distinto. Cuéntanos el tuyo y lo organizamos contigo.</p>
+            <a class="btn btn-dark btn-lg btn-mag" data-wa="man" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20platicar%20sobre%20mi%20viaje." target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="man.cta">Hablemos de mi viaje</span><i class="btn-shine"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ FLOTA · imagen que se abre con el scroll ═══════════════════ -->
+<section id="flota" class="xp is-dark" aria-labelledby="xp-title">
+    <div class="xp-track" id="xp-track">
+        <div class="xp-stage" id="xp-stage">
+            <div class="xp-intro" id="xp-intro">
+                <p class="eyebrow" data-scramble data-i18n="xp.eyebrow">Nuestra flota</p>
+                <h2 id="xp-title" class="h2" data-split data-i18n="xp.title">Una flota pensada para tu <span class="grad">comodidad</span></h2>
+            </div>
+
+            <figure class="xp-media" id="xp-media">
+                <img id="xp-img" src="img/tak-fleet-suv.jpg" width="2200" height="1467" alt="SUV blanca de la flota TAK On Time, lista para recoger a sus pasajeros" data-i18n-alt="xp.alt" loading="lazy" decoding="async">
+                <span class="xp-shade"></span>
+                <span class="xp-badge mono"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg><span data-i18n="xp.badge">Flota ejecutiva · limpia y segura</span></span>
+            </figure>
+
+            <div class="xp-copy" id="xp-copy">
+                <h3 class="xp-h" data-i18n="xp.h">SUVs recientes, sanitizadas y listas para ti.</h3>
+                <p class="xp-p" data-i18n="xp.p">Unidades amplias y cómodas, con amenidades para tus pacientes y espacio para equipaje o equipo de apoyo médico. Desinfección e higiene estrictas en cada servicio.</p>
+                <ul class="xp-feats">
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg><span data-i18n="xp.f1">Unidades SUV recientes</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg><span data-i18n="xp.f2">Sanitizadas antes y después</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg><span data-i18n="xp.f3">Espacio para equipaje</span></li>
+                </ul>
+                <a class="btn btn-primary btn-lg btn-mag" data-wa="fleet" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20viajar%20en%20una%20de%20sus%20unidades." target="_blank" rel="noopener">
+                    <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="xp.cta">Quiero viajar así</span><i class="btn-shine"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ SERVICIOS · scroll horizontal fijado ═══════════════════ -->
+<section id="servicios" class="hs is-dark" aria-labelledby="svc-title">
+    <div class="hs-track" id="hs-track">
+        <div class="hs-stage" id="hs-stage">
+            <div class="hs-head">
+                <p class="eyebrow" data-scramble data-i18n="svc.eyebrow">Lo que ofrecemos</p>
+                <h2 id="svc-title" class="h2" data-split data-i18n="svc.title">Servicios <span class="grad">especializados</span> para cada tipo de viaje</h2>
+                <p class="lead" data-i18n="svc.lead">Soluciones integrales de transporte diseñadas para garantizar confort, confidencialidad y puntualidad en cada trayecto.</p>
+                <div class="hs-prog" aria-hidden="true"><i id="hs-prog"></i></div>
+                <p class="hs-hint mono" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg><span data-i18n="svc.hint">Desliza para explorar</span></p>
+            </div>
+
+            <div class="hs-view" id="hs-view">
+                <div class="hs-rail" id="hs-rail">
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-medical-room.jpg" width="1400" height="933" alt="Quirófano moderno y equipado, destino habitual del transporte médico" data-i18n-alt="svc.1.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">01</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-cross"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.1.t">Transporte Médico</h3>
+                            <p data-i18n="svc.1.p">Traslados programados y cómodos para pacientes con citas médicas, tratamientos continuos o revisiones en clínicas y hospitales.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="1" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Transporte%20M%C3%A9dico." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-dental.jpg" width="1400" height="2097" alt="Odontóloga atendiendo a una paciente en una clínica de turismo médico" data-i18n-alt="svc.2.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">02</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-steth"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.2.t">Turismo Médico</h3>
+                            <p data-i18n="svc.2.p">Acompañamiento integral y transporte privado para pacientes internacionales que buscan atención médica de calidad en Tijuana.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="2" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Turismo%20M%C3%A9dico." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-private.jpg" width="1600" height="1067" alt="Vehículo ejecutivo blanco circulando entre palmeras, listo para un traslado privado" data-i18n-alt="svc.3.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">03</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.3.t">Transporte Privado SD ⇄ TJ</h3>
+                            <p data-i18n="svc.3.p">Viajes ejecutivos y privados adaptados a tu horario. Cómodas unidades SUV para cruces directos sin contratiempos.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="3" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Transporte%20Privado%20SD-TJ." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-airport.jpg" width="1600" height="1067" alt="Viajero esperando su vuelo en una terminal de aeropuerto" data-i18n-alt="svc.4.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">04</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-plane"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.4.t">Aeropuerto ⇄ Hospital / Hotel</h3>
+                            <p data-i18n="svc.4.p">Recogida directa en aeropuertos (SAN / TIJ) y traslado a hospitales, clínicas de recuperación u hoteles de tu preferencia.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="4" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Aeropuerto%20-%20Hospital%2FHotel." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-patient-care.jpg" width="1400" height="2100" alt="Paciente mayor acompañado con calidez por un familiar" data-i18n-alt="svc.5.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">05</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.5.t">Pacientes y Acompañantes</h3>
+                            <p data-i18n="svc.5.p">Espacio amplio para el paciente y sus familiares, con lugar suficiente para equipaje o equipamiento de apoyo médico.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="5" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Pacientes%20y%20Acompa%C3%B1antes." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc">
+                        <div class="svc-media">
+                            <img src="img/tak-executive.jpg" width="1600" height="2397" alt="Vehículo ejecutivo negro para traslados privados y de negocios" data-i18n-alt="svc.6.alt" loading="lazy" decoding="async">
+                            <span class="svc-num mono">06</span>
+                            <span class="svc-ic"><svg class="ic" aria-hidden="true"><use href="#i-case"/></svg></span>
+                        </div>
+                        <div class="svc-body">
+                            <h3 data-i18n="svc.6.t">Traslados Ejecutivos</h3>
+                            <p data-i18n="svc.6.p">Servicio privado, puntual y discreto para ejecutivos y viajeros de negocios que cruzan la frontera con la agenda ajustada.</p>
+                            <a class="svc-link" data-wa="svc" data-svc="6" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20me%20interesa%20el%20servicio%3A%20Traslados%20Ejecutivos." target="_blank" rel="noopener"><span data-i18n="svc.link">Reservar este servicio</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="svc svc-end">
+                        <svg class="svc-end-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+                        <h3 data-i18n="svc.end.t">¿Tu viaje es distinto?</h3>
+                        <p data-i18n="svc.end.p">Cuéntanos a dónde vas y lo armamos a tu medida.</p>
+                        <a class="btn btn-primary btn-lg" data-wa="svc-end" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20armar%20mi%20ruta." target="_blank" rel="noopener">
+                            <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="svc.end.cta">Quiero armar mi ruta</span><i class="btn-shine"></i>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ POR QUÉ TAK · bento ═══════════════════ -->
+<section id="porque" class="section why is-dark" aria-labelledby="why-title">
+    <div class="why-glow" aria-hidden="true"></div>
+    <div class="container">
+        <header class="sec-head">
+            <p class="eyebrow" data-scramble data-i18n="why.eyebrow">Nuestra diferencia</p>
+            <h2 id="why-title" class="h2" data-split data-i18n="why.title">¿Por qué elegir <span class="grad">TAK On Time</span>?</h2>
+            <p class="lead" data-reveal="up" data-i18n="why.lead">Detalles que se sienten desde el primer mensaje hasta que llegas a tu destino.</p>
+        </header>
+
+        <div class="bento">
+            <article class="bx bx-lang spot" data-reveal="up" data-tilt style="--i:0">
+                <span class="bx-ic"><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg></span>
+                <h3 data-i18n="why.1.t">Choferes bilingües</h3>
+                <p data-i18n="why.1.p">Personal capacitado con dominio fluido del inglés y español para garantizar una comunicación clara en todo momento.</p>
+                <span class="lang-wm" aria-hidden="true">EN<i>⇄</i>ES</span>
+                <div class="chat" aria-hidden="true">
+                    <span class="bub b1">Good morning! Ready for your appointment?</span>
+                    <span class="bub b2">¡Buenos días! Sí, muchas gracias.</span>
+                    <span class="bub b3">We'll get you there on time. 🚗</span>
+                </div>
+            </article>
+
+            <article class="bx bx-safe spot" data-reveal="up" data-tilt style="--i:1">
+                <div class="safe-fx" aria-hidden="true"><i></i><i></i><i></i><svg class="ic"><use href="#i-shield"/></svg></div>
+                <h3 data-i18n="why.2.t">Servicio seguro y confiable</h3>
+                <p data-i18n="why.2.p">Priorizamos tu seguridad. Conductores profesionales, responsables y con amplio conocimiento de rutas transfronterizas.</p>
+            </article>
+
+            <article class="bx bx-clean spot" data-reveal="up" data-tilt style="--i:2">
+                <img src="img/tak-sanitized-interior.jpg" width="1400" height="2488" alt="Personal limpiando y desinfectando el interior de un vehículo" data-i18n-alt="why.3.alt" loading="lazy" decoding="async">
+                <span class="clean-shade"></span>
+                <i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i>
+                <div class="bx-body">
+                    <span class="bx-ic"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+                    <h3 data-i18n="why.3.t">Vehículos limpios y sanitizados</h3>
+                    <p data-i18n="why.3.p">Estándares estrictos de higiene y desinfección en cada unidad, antes y después de cada servicio.</p>
+                </div>
+            </article>
+
+            <article class="bx bx-247 spot" data-reveal="up" data-tilt style="--i:3">
+                <div class="dial" aria-hidden="true">
+                    <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="dial-ring"/><g class="dial-ticks" id="dial-ticks"></g><g class="dial-orbit"><line x1="60" y1="3" x2="60" y2="13" class="dial-hand"/></g></svg>
+                    <b>24/7</b>
+                </div>
+                <h3 data-i18n="why.4.t">Disponible 24 horas / 7 días</h3>
+                <p data-i18n="why.4.p">Atención continua, de día o de noche, para responder a itinerarios médicos y vuelos a cualquier hora.</p>
+            </article>
+
+            <article class="bx bx-care spot" data-reveal="up" data-tilt style="--i:4">
+                <span class="bx-ic"><svg class="ic" aria-hidden="true"><use href="#i-pulse"/></svg></span>
+                <h3 data-i18n="why.5.t">Atención personalizada</h3>
+                <p data-i18n="why.5.p">Entendemos las necesidades delicadas de nuestros pacientes. Brindamos un trato humano, cordial y de máximo respeto.</p>
+                <svg class="ecg" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"><path class="ecg-bg" d="M0 30h70l10-4 8 4h20l8-22 10 44 9-30 6 8h30l10-4 8 4h60l10-4 8 4h20l8-22 10 44 9-30 6 8h60"/><path class="ecg-fx" d="M0 30h70l10-4 8 4h20l8-22 10 44 9-30 6 8h30l10-4 8 4h60l10-4 8 4h20l8-22 10 44 9-30 6 8h60"/></svg>
+                <ul class="care-chips">
+                    <li data-i18n="why.5.c1">Trato humano</li><li data-i18n="why.5.c2">Amenidades para tus pacientes</li><li data-i18n="why.5.c3">Atención cordial</li>
+                </ul>
+            </article>
+
+            <article class="bx bx-route spot" data-reveal="up" data-tilt style="--i:5">
+                <div class="rt" aria-hidden="true">
+                    <div class="rt-city"><b>SD</b><small class="mono">San Diego</small></div>
+                    <span class="rt-line"><i></i><i></i><i></i><em class="rt-border mono">BORDER</em></span>
+                    <div class="rt-city end"><b>TJ</b><small class="mono">Tijuana</small></div>
+                </div>
+                <h3 data-i18n="why.6.t">Cruce binacional directo</h3>
+                <p data-i18n="why.6.p">San Diego ⇄ Tijuana sin contratiempos, en unidades SUV adaptadas para que el trayecto sea cómodo y tranquilo.</p>
+            </article>
+        </div>
+
+        <div class="why-cta" data-reveal="up">
+            <p data-i18n="why.cta.p">¿Te quedó alguna duda? Resolvámosla en un solo mensaje.</p>
+            <a class="btn btn-primary btn-lg btn-mag" data-wa="why" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20estoy%20listo%20para%20viajar%20con%20ustedes." target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="why.cta">Estoy listo para viajar tranquilo</span><i class="btn-shine"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ PROCESO ═══════════════════ -->
+<section id="proceso" class="section proc is-light" aria-labelledby="proc-title">
+    <div class="container">
+        <header class="sec-head center">
+            <p class="eyebrow" data-scramble data-i18n="proc.eyebrow">Así de simple</p>
+            <h2 id="proc-title" class="h2" data-split data-i18n="proc.title">Tu traslado en <span class="grad">4 pasos</span></h2>
+            <p class="lead" data-reveal="up" data-i18n="proc.lead">Sin trámites innecesarios: tú nos cuentas, nosotros coordinamos todo.</p>
+        </header>
+
+        <div class="proc-grid" id="proc">
+            <aside class="proc-side" aria-hidden="true">
+                <div class="ps-card">
+                    <div class="ps-ring">
+                        <svg viewBox="0 0 200 200"><circle class="ps-track" cx="100" cy="100" r="88"/><circle class="ps-fill" id="ps-fill" cx="100" cy="100" r="88" pathLength="1"/></svg>
+                        <div class="ps-num mono"><span id="ps-n">01</span><small>/04</small></div>
+                    </div>
+                    <p class="ps-title" id="ps-title">Escríbenos</p>
+                    <div class="ps-route">
+                        <i class="pr-line"><i id="pr-fill"></i></i>
+                        <i class="pr-node on"></i><i class="pr-node"></i><i class="pr-node"></i><i class="pr-node"></i>
+                        <span class="pr-car" id="pr-car"><svg class="ic"><use href="#i-car"/></svg></span>
+                    </div>
+                </div>
+            </aside>
+
+            <ol class="proc-steps">
+                <li class="step" data-step="1" data-title="proc.1.t">
+                    <span class="step-n mono">01</span>
+                    <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span>
+                    <h3 data-i18n="proc.1.t">Escríbenos</h3>
+                    <p data-i18n="proc.1.p">Cuéntanos por WhatsApp a dónde vas, en qué fecha y cuántas personas viajan. Sin formularios eternos.</p>
+                </li>
+                <li class="step" data-step="2" data-title="proc.2.t">
+                    <span class="step-n mono">02</span>
+                    <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span>
+                    <h3 data-i18n="proc.2.t">Confirmamos tarifa y horario</h3>
+                    <p data-i18n="proc.2.p">Te enviamos tu tarifa clara y coordinamos la hora exacta de recogida para que nada quede al azar.</p>
+                </li>
+                <li class="step" data-step="3" data-title="proc.3.t">
+                    <span class="step-n mono">03</span>
+                    <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg></span>
+                    <h3 data-i18n="proc.3.t">Te recogemos</h3>
+                    <p data-i18n="proc.3.p">Tu chofer bilingüe llega puntual al aeropuerto, hotel, departamento o donde nos indiques, en una unidad sanitizada.</p>
+                </li>
+                <li class="step" data-step="4" data-title="proc.4.t">
+                    <span class="step-n mono">04</span>
+                    <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                    <h3 data-i18n="proc.4.t">Llegas tranquilo y a tiempo</h3>
+                    <p data-i18n="proc.4.p">Te dejamos en tu clínica u hospital y, si lo necesitas, te regresamos al terminar tu cita.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="proc-cta" data-reveal="up">
+            <a class="btn btn-dark btn-lg btn-mag" data-wa="proc" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20empezar%20mi%20reserva." target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="proc.cta">Empezar mi reserva por WhatsApp</span><i class="btn-shine"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ COBERTURA ═══════════════════ -->
+<section id="cobertura" class="section cov is-dark" aria-labelledby="cov-title">
+    <img class="cov-bg" src="img/tak-san-diego-bay.jpg" width="1800" height="1200" alt="" role="presentation" loading="lazy" decoding="async" data-parallax="0.12">
+    <div class="cov-shade" aria-hidden="true"></div>
+    <div class="container cov-grid">
+        <div class="cov-copy">
+            <p class="eyebrow" data-scramble data-i18n="cov.eyebrow">Cobertura</p>
+            <h2 id="cov-title" class="h2" data-split data-i18n="cov.title">De California a Tijuana, <span class="grad">puerta a puerta</span></h2>
+            <p class="lead" data-reveal="up" data-i18n="cov.lead">Desde San Diego hasta Tijuana te recogemos y te llevamos exactamente donde lo necesitas.</p>
+            <ul class="cov-list" data-reveal="up">
+                <li><svg class="ic" aria-hidden="true"><use href="#i-plane"/></svg><span data-i18n="cov.l1">Aeropuertos (SAN / TIJ)</span></li>
+                <li><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg><span data-i18n="cov.l2">Hoteles y departamentos</span></li>
+                <li><svg class="ic" aria-hidden="true"><use href="#i-cross"/></svg><span data-i18n="cov.l3">Hospitales y clínicas</span></li>
+                <li><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="cov.l4">Y más: tú nos dices el destino</span></li>
+            </ul>
+            <p class="cov-note mono" data-reveal="up" data-i18n="cov.note">Tarifa base hasta 25 mi / 40 km. Más distancia: te cotizamos al instante.</p>
+            <a class="btn btn-primary btn-lg btn-mag" data-wa="cov" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20%C2%BFllegan%20a%20mi%20zona%3F" target="_blank" rel="noopener" data-reveal="up">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cov.cta">¿Llegan a mi zona? Pregúntanos</span><i class="btn-shine"></i>
+            </a>
+        </div>
+
+        <div class="radar" aria-hidden="true">
+            <i class="rd rd1"></i><i class="rd rd2"></i><i class="rd rd3"></i>
+            <i class="rd-cross x"></i><i class="rd-cross y"></i>
+            <i class="rd-sweep"></i>
+            <span class="rd-core"><svg><use href="#i-mark"/></svg></span>
+            <span class="rd-pin p1"><svg class="ic"><use href="#i-plane"/></svg><em>SAN</em></span>
+            <span class="rd-pin p2"><svg class="ic"><use href="#i-cross"/></svg><em>Hospital</em></span>
+            <span class="rd-pin p3"><svg class="ic"><use href="#i-building"/></svg><em>Hotel</em></span>
+            <span class="rd-pin p4"><svg class="ic"><use href="#i-plane"/></svg><em>TIJ</em></span>
+            <span class="rd-lbl l1 mono">25 mi · 40 km</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ TARIFAS + ESTIMADOR ═══════════════════ -->
+<section id="tarifas" class="section price is-light" aria-labelledby="price-title">
+    <div class="container">
+        <header class="sec-head">
+            <p class="eyebrow" data-scramble data-i18n="price.eyebrow">Tarifas</p>
+            <h2 id="price-title" class="h2" data-split data-i18n="price.title">Precios claros desde el <span class="grad">primer mensaje</span></h2>
+            <p class="lead" data-reveal="up" data-i18n="price.lead">Tarifa por paciente con 1 acompañante, hasta 25 mi / 40 km. Sin sorpresas.</p>
+        </header>
+
+        <div class="price-grid">
+            <article class="pc" data-reveal="up" data-tilt style="--i:0">
+                <p class="pc-k mono" data-i18n="price.1.k">Viaje sencillo</p>
+                <h3 data-i18n="price.1.t">San Diego → Tijuana</h3>
+                <div class="pc-amt"><span>$</span><b>85</b><small>USD</small></div>
+                <ul class="pc-list">
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.l1">Paciente + 1 acompañante</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.l2">Hasta 25 mi / 40 km</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.l3">Chofer bilingüe y SUV sanitizada</span></li>
+                </ul>
+                <a class="btn btn-outline btn-block" data-wa="price1" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20un%20viaje%20sencillo%20SD%20-%20TJ%20(%2485%20USD)." target="_blank" rel="noopener"><span data-i18n="price.1.cta">Quiero este viaje</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </article>
+
+            <article class="pc pc-feat" data-reveal="up" data-tilt style="--i:1">
+                <span class="pc-badge mono" data-i18n="price.badge">Mejor valor</span>
+                <p class="pc-k mono" data-i18n="price.2.k">Ida y vuelta</p>
+                <h3 data-i18n="price.2.t">San Diego ⇄ Tijuana</h3>
+                <div class="pc-amt"><span>$</span><b>130</b><small>USD</small></div>
+                <ul class="pc-list">
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.l1">Paciente + 1 acompañante</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.l2">Hasta 25 mi / 40 km</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.2.l">Ahorras $40 USD frente a dos viajes sencillos</span></li>
+                </ul>
+                <a class="btn btn-primary btn-block btn-mag" data-wa="price2" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20quiero%20un%20viaje%20ida%20y%20vuelta%20SD%20-%20TJ%20(%24130%20USD)." target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="price.2.cta">Quiero mi ida y vuelta</span><i class="btn-shine"></i></a>
+            </article>
+
+            <article class="pc pc-add" data-reveal="up" data-tilt style="--i:2">
+                <p class="pc-k mono" data-i18n="price.3.k">Adicional</p>
+                <h3 data-i18n="price.3.t">Pase médico</h3>
+                <div class="pc-amt"><span>+$</span><b>60</b><small>USD</small></div>
+                <ul class="pc-list">
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.3.l1">Cargo adicional por pase médico</span></li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.3.l2">Te confirmamos si aplica a tu caso</span></li>
+                </ul>
+                <a class="btn btn-outline btn-block" data-wa="price3" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20tengo%20dudas%20sobre%20el%20pase%20m%C3%A9dico." target="_blank" rel="noopener"><span data-i18n="price.3.cta">Consultar mi caso</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </article>
+        </div>
+
+        <!-- Estimador interactivo -->
+        <div class="est" id="est" data-reveal="up">
+            <div class="est-head">
+                <span class="est-ic"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+                <div>
+                    <h3 data-i18n="est.title">Calcula tu estimado en segundos</h3>
+                    <p data-i18n="est.sub">Ajusta tu viaje y mira tu tarifa de referencia al instante.</p>
+                </div>
+            </div>
+            <div class="est-body">
+                <div class="est-ctl">
+                    <fieldset>
+                        <legend data-i18n="est.trip">Tipo de viaje</legend>
+                        <div class="seg">
+                            <label><input type="radio" name="trip" value="one" checked><span data-i18n="est.one">Sencillo</span></label>
+                            <label><input type="radio" name="trip" value="round"><span data-i18n="est.round">Ida y vuelta</span></label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend data-i18n="est.pax">Pacientes</legend>
+                        <div class="stepper">
+                            <button type="button" id="pax-minus" aria-label="Menos pacientes" data-i18n-aria="est.minus">−</button>
+                            <output id="pax-out" aria-live="polite">1</output>
+                            <button type="button" id="pax-plus" aria-label="Más pacientes" data-i18n-aria="est.plus">+</button>
+                        </div>
+                        <p class="est-hint" data-i18n="est.hint">Cada paciente puede viajar con 1 acompañante.</p>
+                    </fieldset>
+                    <label class="switch">
+                        <input type="checkbox" id="est-pass">
+                        <span class="sw-track"><i></i></span>
+                        <span data-i18n="est.pass">Incluir pase médico (+$60 USD)</span>
+                    </label>
+                </div>
+                <div class="est-res">
+                    <small class="mono" data-i18n="est.res">Tu estimado</small>
+                    <div class="est-total"><span>$</span><b id="est-total">85</b><small>USD</small></div>
+                    <ul class="est-lines" id="est-lines"></ul>
+                    <a class="btn btn-primary btn-lg btn-block btn-mag" id="est-cta" data-wa="est" href="https://wa.me/526643752622" target="_blank" rel="noopener">
+                        <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="est.cta">Quiero mi cotización exacta</span><i class="btn-shine"></i>
+                    </a>
+                    <p class="est-note" data-i18n="est.note">Estimado de referencia. Confirmamos tu tarifa final por WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+
+        <ul class="notes" data-reveal="up">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.n1">Los precios están expresados en USD por paciente.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.n2">El pase médico tiene un cargo adicional de $60.00 USD.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="price.n3">Los viajes que excedan la distancia indicada generan un cargo adicional.</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ═══════════════════ ESTADÍSTICAS ═══════════════════ -->
+<section class="stats is-teal" aria-label="TAK On Time en números">
+    <div class="container stats-grid">
+        <div class="stat" data-reveal="up" style="--i:0">
+            <svg class="stat-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" class="sr-t"/><circle cx="50" cy="50" r="44" class="sr-f" pathLength="1"/></svg>
+            <div class="stat-v"><b data-count="10">0</b><span>+</span></div>
+            <p data-i18n="stat.1">Años de experiencia</p>
+        </div>
+        <div class="stat" data-reveal="up" style="--i:1">
+            <svg class="stat-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" class="sr-t"/><circle cx="50" cy="50" r="44" class="sr-f" pathLength="1"/></svg>
+            <div class="stat-v"><b data-count="24">0</b><span>/7</span></div>
+            <p data-i18n="stat.2">Atención continua</p>
+        </div>
+        <div class="stat" data-reveal="up" style="--i:2">
+            <svg class="stat-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" class="sr-t"/><circle cx="50" cy="50" r="44" class="sr-f" pathLength="1"/></svg>
+            <div class="stat-v"><b data-count="40">0</b><span>km</span></div>
+            <p data-i18n="stat.3">Radio base incluido (25 mi)</p>
+        </div>
+        <div class="stat" data-reveal="up" style="--i:3">
+            <svg class="stat-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" class="sr-t"/><circle cx="50" cy="50" r="44" class="sr-f" pathLength="1"/></svg>
+            <div class="stat-v"><b data-count="2">0</b><span>ES·EN</span></div>
+            <p data-i18n="stat.4">Idiomas en cada viaje</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section id="faq" class="section faq is-light" aria-labelledby="faq-title">
+    <div class="container faq-grid">
+        <div class="faq-side">
+            <p class="eyebrow" data-scramble data-i18n="faq.eyebrow">Resolvemos tus dudas</p>
+            <h2 id="faq-title" class="h2" data-split data-i18n="faq.title">Preguntas <span class="grad">frecuentes</span></h2>
+            <p class="lead" data-reveal="up" data-i18n="faq.lead">Lo que más nos preguntan pacientes, familiares y viajeros antes de reservar.</p>
+            <a class="btn btn-dark btn-lg btn-mag" data-wa="faq" href="https://wa.me/526643752622?text=Hola%20TAK%2C%20tengo%20una%20pregunta." target="_blank" rel="noopener" data-reveal="up">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="faq.cta">¿Otra duda? Pregúntanos</span><i class="btn-shine"></i>
+            </a>
+        </div>
+
+        <div class="faq-list" id="faq-list" data-reveal="up">
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa1"><span data-i18n="faq.1.q">¿Cuánto cuesta un traslado entre San Diego y Tijuana?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa1"><div><p data-i18n="faq.1.a">Viaje sencillo SD–TJ: $85 USD. Ida y vuelta SD–TJ: $130 USD. Son tarifas por paciente con 1 acompañante, hasta 25 millas / 40 km. El pase médico tiene un cargo adicional de $60 USD. Si tu recorrido es más largo, te cotizamos al instante.</p></div></div>
+            </div>
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa2"><span data-i18n="faq.2.q">¿Qué incluye la tarifa?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa2"><div><p data-i18n="faq.2.a">Servicio privado en una SUV sanitizada, con chofer bilingüe, para el paciente y 1 acompañante, hasta 25 mi / 40 km. Amenidades para tus pacientes y espacio para equipaje o equipo de apoyo médico.</p></div></div>
+            </div>
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa3"><span data-i18n="faq.3.q">¿Atienden aeropuertos, hoteles y hospitales?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa3"><div><p data-i18n="faq.3.a">Sí. Recogemos en aeropuertos (SAN / TIJ) y te llevamos a hospitales, clínicas de recuperación, hoteles, departamentos y más. Tú nos dices el destino.</p></div></div>
+            </div>
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa4"><span data-i18n="faq.4.q">¿Los choferes hablan inglés?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa4"><div><p data-i18n="faq.4.a">Sí. Todo nuestro personal es bilingüe, con dominio fluido de inglés y español, para que la comunicación sea clara en todo momento.</p></div></div>
+            </div>
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa5"><span data-i18n="faq.5.q">¿Tienen servicio en la madrugada o fines de semana?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa5"><div><p data-i18n="faq.5.a">Sí. Estamos disponibles 24 horas, 7 días a la semana, para responder a itinerarios médicos y vuelos a cualquier hora.</p></div></div>
+            </div>
+            <div class="qa">
+                <h3><button class="qa-q" type="button" aria-expanded="false" aria-controls="qa6"><span data-i18n="faq.6.q">¿Cómo reservo mi traslado?</span><i class="qa-pm" aria-hidden="true"></i></button></h3>
+                <div class="qa-a" id="qa6"><div><p data-i18n="faq.6.a">Escríbenos por WhatsApp al +52 664 375 2622 o llena el formulario de esta página. Confirmamos tarifa, horario y punto de recogida contigo.</p></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ CTA FINAL + FORMULARIO ═══════════════════ -->
+<section id="contacto" class="section cta is-dark" aria-labelledby="cta-title">
+    <canvas id="cta-canvas" aria-hidden="true"></canvas>
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="container cta-grid">
+        <div class="cta-copy">
+            <p class="eyebrow" data-scramble data-i18n="cta.eyebrow">Reserva tu traslado</p>
+            <h2 id="cta-title" class="h2 h2-xl" data-split data-i18n="cta.title">¿Listo para viajar sin preocuparte por el <span class="grad">reloj</span>?</h2>
+            <p class="lead" data-reveal="up" data-i18n="cta.lead">Escríbenos y confirmamos tarifa, horario y punto de recogida. Sin compromiso.</p>
+
+            <ul class="contact-list" data-reveal="up">
+                <li><a href="https://wa.me/526643752622" target="_blank" rel="noopener" data-wa="contact"><span class="cl-ic wa"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span><span><small data-i18n="cta.c1">WhatsApp directo</small><b>+52 664 375 2622</b></span></a></li>
+                <li><a href="mailto:transportationtak@gmail.com"><span class="cl-ic"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small data-i18n="cta.c2">Correo</small><b>transportationtak@gmail.com</b></span></a></li>
+                <li><a href="https://www.instagram.com/tak_transportation" target="_blank" rel="noopener"><span class="cl-ic"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg></span><span><small>Instagram</small><b>@tak_transportation</b></span></a></li>
+                <li><div class="cl-static"><span class="cl-ic"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><span><small data-i18n="cta.c4">Base de operaciones</small><b>Tijuana, B.C. · San Diego, CA</b></span></div></li>
+            </ul>
+        </div>
+
+        <form class="bookf" id="book-form" novalidate data-reveal="up">
+            <div class="bookf-head">
+                <h3 data-i18n="form.title">Pide tu traslado</h3>
+                <p data-i18n="form.sub">Completa tus datos y sigue por WhatsApp: tu solicitud llega lista para enviar.</p>
+            </div>
+            <div class="f-row">
+                <div class="f"><label for="f-name" data-i18n="form.name">Nombre completo</label><input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Ej. María López" data-i18n-ph="form.name.ph"><span class="f-err" data-i18n="form.err.name">Escribe tu nombre.</span></div>
+                <div class="f"><label for="f-phone" data-i18n="form.phone">Teléfono / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required inputmode="tel" placeholder="+1 619 000 0000" data-i18n-ph="form.phone.ph"><span class="f-err" data-i18n="form.err.phone">Escribe un número válido.</span></div>
+            </div>
+            <div class="f-row">
+                <div class="f"><label for="f-service" data-i18n="form.service">Servicio</label>
+                    <select id="f-service" name="service" required>
+                        <option value="" disabled selected data-i18n="form.opt.select">Selecciona una opción</option>
+                        <option value="svc1" data-i18n="svc.1.t">Transporte Médico</option>
+                        <option value="svc2" data-i18n="svc.2.t">Turismo Médico</option>
+                        <option value="svc3" data-i18n="svc.3.t">Transporte Privado SD ⇄ TJ</option>
+                        <option value="svc4" data-i18n="svc.4.t">Aeropuerto ⇄ Hospital / Hotel</option>
+                        <option value="svc5" data-i18n="svc.5.t">Pacientes y Acompañantes</option>
+                        <option value="svc6" data-i18n="svc.6.t">Traslados Ejecutivos</option>
+                        <option value="other" data-i18n="form.opt.other">Otro / no estoy seguro</option>
+                    </select><span class="f-err" data-i18n="form.err.service">Elige un servicio.</span></div>
+                <div class="f"><label for="f-route" data-i18n="form.route">Ruta</label>
+                    <select id="f-route" name="route">
+                        <option value="sdtj" data-i18n="form.r1">San Diego → Tijuana</option>
+                        <option value="tjsd" data-i18n="form.r2">Tijuana → San Diego</option>
+                        <option value="round" data-i18n="form.r3">Ida y vuelta SD ⇄ TJ</option>
+                        <option value="other" data-i18n="form.r4">Otra / por definir</option>
+                    </select></div>
+            </div>
+            <div class="f-row">
+                <div class="f"><label for="f-date" data-i18n="form.date">Fecha del traslado</label><input id="f-date" name="date" type="date"></div>
+                <div class="f"><label for="f-pax" data-i18n="form.pax">Personas</label><input id="f-pax" name="pax" type="number" min="1" max="12" value="2" inputmode="numeric"></div>
+            </div>
+            <div class="f"><label for="f-msg" data-i18n="form.msg">Cuéntanos más (opcional)</label><textarea id="f-msg" name="msg" rows="3" placeholder="Ej. Cita a las 9:00 am en clínica dental, llegamos al aeropuerto SAN a las 7:30." data-i18n-ph="form.msg.ph"></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block btn-mag">
+                <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.submit">Sí, quiero reservar mi traslado</span><i class="btn-shine"></i>
+            </button>
+            <p class="f-note" data-i18n="form.note">Se abrirá WhatsApp con tu solicitud lista para enviar. Respondemos 24/7.</p>
+            <div class="f-ok" id="f-ok" hidden role="status">
+                <svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>
+                <div><b data-i18n="form.ok.t">¡Listo! Abrimos WhatsApp.</b><br><a id="f-ok-link" href="https://wa.me/526643752622" target="_blank" rel="noopener" data-i18n="form.ok.a">¿No se abrió? Toca aquí para continuar.</a></div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer is-dark">
+    <div class="container">
+        <div class="ft-top">
+            <div class="ft-brand">
+                <a href="#inicio" class="brand" aria-label="TAK On Time — Inicio">
+                    <svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+                    <span class="brand-txt"><b>TAK</b><small>ON TIME</small></span>
+                </a>
+                <p data-i18n="ft.blurb">Transporte médico y privado entre San Diego y Tijuana. Tu tiempo es nuestra prioridad.</p>
+                <div class="ft-social">
+                    <a href="https://wa.me/526643752622" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+                    <a href="https://www.instagram.com/tak_transportation" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg></a>
+                    <a href="mailto:transportationtak@gmail.com" aria-label="Email"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></a>
+                </div>
+            </div>
+            <nav class="ft-col" aria-label="Servicios">
+                <h4 data-i18n="ft.h1">Servicios</h4>
+                <a href="#servicios" data-i18n="svc.1.t">Transporte Médico</a>
+                <a href="#servicios" data-i18n="svc.2.t">Turismo Médico</a>
+                <a href="#servicios" data-i18n="svc.3.t">Transporte Privado SD ⇄ TJ</a>
+                <a href="#servicios" data-i18n="svc.4.t">Aeropuerto ⇄ Hospital / Hotel</a>
+            </nav>
+            <nav class="ft-col" aria-label="Compañía">
+                <h4 data-i18n="ft.h2">Compañía</h4>
+                <a href="#nosotros" data-i18n="ft.l1">Quiénes somos</a>
+                <a href="#flota" data-i18n="nav.fleet">Flota</a>
+                <a href="#porque" data-i18n="ft.l2">Por qué TAK</a>
+                <a href="#cobertura" data-i18n="cov.eyebrow">Cobertura</a>
+            </nav>
+            <nav class="ft-col" aria-label="Ayuda">
+                <h4 data-i18n="ft.h3">Ayuda</h4>
+                <a href="#tarifas" data-i18n="nav.pricing">Tarifas</a>
+                <a href="#proceso" data-i18n="nav.process">Cómo funciona</a>
+                <a href="#faq" data-i18n="ft.l3">Preguntas frecuentes</a>
+                <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+            </nav>
+        </div>
+        <div class="ft-mega" aria-hidden="true"><span>TAK</span><span>ON TIME</span></div>
+        <div class="ft-bot">
+            <p>© <span id="year">2026</span> TAK On Time · Tijuana, B.C. · <span data-i18n="ft.rights">Todos los derechos reservados.</span></p>
+            <a href="#inicio" class="to-top mono"><span data-i18n="ft.top">Volver arriba</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="wa-float" id="wa-float" data-wa="float" href="https://wa.me/526643752622?text=Hola%20TAK%20On%20Time%2C%20quiero%20informes." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-i18n-aria="wa.aria">
+    <span class="wa-tip" data-i18n="wa.tip">¿Necesitas un traslado? Escríbenos</span>
+    <span class="wa-btn"><i class="wa-pulse"></i><i class="wa-pulse p2"></i><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span>
+</a>
+
+<!-- Aviso de idioma (sólo si el navegador está en inglés) -->
+<div class="lang-toast" id="lang-toast" role="dialog" aria-label="Language" hidden>
+    <svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>
+    <span>Would you prefer this page in English?</span>
+    <button type="button" id="lt-yes">Yes, English</button>
+    <button type="button" id="lt-no" aria-label="Dismiss">×</button>
+</div>
+
+<!-- Lenis (scroll suave con inercia): mejora progresiva, la página funciona igual sin él -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
