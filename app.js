@@ -8,7 +8,7 @@
    03 Preloader               11 Flota: imagen que se expande
    04 Motor de scroll         12 Servicios: scroll horizontal
    05 Nav + menú móvil        13 Proceso + contadores
-   06 Cursor, tilt, magnético 14 Estimador, FAQ, formulario → WhatsApp
+   06 Cursor, tilt, magnético 14 FAQ
    07 Revelado + parallax     15 Init
    ═══════════════════════════════════════════════════════════════════ */
 (() => {
@@ -39,19 +39,19 @@ let lang = 'es';
    indexada por data-i18n="clave". */
 const EN = {
     'a11y.skip': 'Skip to content',
-    'nav.services': 'Services', 'nav.fleet': 'Fleet', 'nav.process': 'How it works', 'nav.pricing': 'Pricing', 'nav.contact': 'Contact',
+    'nav.services': 'Services', 'nav.fleet': 'Fleet', 'nav.process': 'How it works', 'nav.contact': 'Contact',
     'nav.cta': 'Book now', 'menu.cta': 'Talk to an advisor',
     'hero.kicker': 'Medical & private transportation · San Diego ⇄ Tijuana',
-    'hero.title': 'Your ride between San Diego and Tijuana, <span class="grad">always on time.</span>',
-    'hero.sub': 'Cross-border medical and private transportation in sanitized SUVs, with bilingual drivers and personalized attention 24 hours a day.',
-    'hero.cta1': 'I want my ride', 'hero.cta2': 'See pricing',
+    'hero.title': 'Medical and corporate rides between <span class="grad">San Diego and Tijuana.</span>',
+    'hero.sub': 'For companies, clinics, hospitals and doctors: sanitized SUVs, bilingual drivers and personalized attention 24 hours a day.',
+    'hero.cta1': 'Request a quote', 'hero.cta2': 'See services',
     'hero.t1': 'Bilingual drivers', 'hero.t2': 'Sanitized vehicles', 'hero.t3': '24/7 service',
     'hero.f1': 'Safe rides', 'hero.f2': 'years of experience',
     'dp.status': 'Active route', 'dp.border': 'Border crossing', 'dp.pickup': 'Pickup', 'dp.arrive': 'Arrive at your appointment',
     'dp.c1': 'Bilingual driver', 'dp.c2': 'Sanitized unit',
     'hero.scroll': 'Discover', 'hero.scroll.aria': 'Scroll to discover more', 'hero.clock': 'Local time · San Diego / Tijuana',
     'man.eyebrow': 'Who we are',
-    'man.text': 'A health trip shouldn\'t feel like paperwork. At TAK we connect <mark>San Diego</mark> with <mark>Tijuana</mark> in sanitized SUVs, with bilingual drivers who know every cross-border route, so you can focus on your appointment and we focus on <mark>your time</mark>.',
+    'man.text': 'A health trip shouldn\'t feel like paperwork. At TAK we connect <mark>San Diego</mark> with <mark>Tijuana</mark> for companies, clinics, hospitals and doctors, in sanitized SUVs with bilingual drivers who know every cross-border route, so you can focus on your patients and we focus on <mark>your time</mark>.',
     'man.p1t': 'Safe', 'man.p1': 'Professional, responsible drivers with extensive knowledge of cross-border routes.',
     'man.p2t': 'Friendly', 'man.p2': 'A human, courteous and deeply respectful approach for patients, family members and companions.',
     'man.p3t': 'Professional', 'man.p3': 'More than 10 years of experience in medical transportation and private rides.',
@@ -91,23 +91,11 @@ const EN = {
     'cov.lead': 'From San Diego to Tijuana we pick you up and take you exactly where you need to be.',
     'cov.l1': 'Airports (SAN / TIJ)', 'cov.l2': 'Hotels & apartments', 'cov.l3': 'Hospitals & clinics', 'cov.l4': 'And more: you tell us the destination',
     'cov.note': 'Base rate up to 25 mi / 40 km. Longer trips: we\'ll quote you instantly.', 'cov.cta': 'Do you reach my area? Ask us',
-    'price.eyebrow': 'Pricing', 'price.title': 'Clear prices from the <span class="grad">first message</span>',
-    'price.lead': 'Rate per patient with 1 companion, up to 25 mi / 40 km. No surprises.',
-    'price.1.k': 'One way', 'price.1.t': 'San Diego → Tijuana', 'price.l1': 'Patient + 1 companion', 'price.l2': 'Up to 25 mi / 40 km',
-    'price.l3': 'Bilingual driver & sanitized SUV', 'price.1.cta': 'I want this trip',
-    'price.badge': 'Best value', 'price.2.k': 'Round trip', 'price.2.t': 'San Diego ⇄ Tijuana', 'price.2.l': 'Save $40 USD vs. two one-way trips', 'price.2.cta': 'I want my round trip',
-    'price.3.k': 'Add-on', 'price.3.t': 'Medical pass', 'price.3.l1': 'Additional fee for medical pass', 'price.3.l2': 'We\'ll confirm if it applies to your case', 'price.3.cta': 'Ask about my case',
-    'est.title': 'Estimate your ride in seconds', 'est.sub': 'Adjust your trip and see a reference rate instantly.',
-    'est.trip': 'Trip type', 'est.one': 'One way', 'est.round': 'Round trip', 'est.pax': 'Patients', 'est.hint': 'Each patient can travel with 1 companion.',
-    'est.pass': 'Include medical pass (+$60 USD)', 'est.res': 'Your estimate', 'est.cta': 'I want my exact quote',
-    'est.note': 'Reference estimate. We confirm your final rate on WhatsApp.',
-    'price.n1': 'Prices are shown in USD per patient.', 'price.n2': 'The medical pass carries an additional fee of $60.00 USD.',
-    'price.n3': 'Rides beyond the indicated distance will incur an additional charge.',
     'stat.1': 'Years of experience', 'stat.2': 'Continuous service', 'stat.3': 'Base radius included (25 mi)', 'stat.4': 'Languages on every ride',
     'faq.eyebrow': 'We answer your questions', 'faq.title': 'Frequently asked <span class="grad">questions</span>',
     'faq.lead': 'What patients, families and travelers ask us most before booking.', 'faq.cta': 'Another question? Ask us',
     'faq.1.q': 'How much does a ride between San Diego and Tijuana cost?',
-    'faq.1.a': 'One way SD–TJ: $85 USD. Round trip SD–TJ: $130 USD. These are rates per patient with 1 companion, up to 25 miles / 40 km. The medical pass carries an additional fee of $60 USD. If your trip is longer, we\'ll quote you instantly.',
+    'faq.1.a': 'We quote each ride based on the route, the trip type and the number of passengers. Message us on WhatsApp and we\'ll reply right away.',
     'faq.2.q': 'What does the rate include?',
     'faq.2.a': 'Private service in a sanitized SUV with a bilingual driver, for the patient and 1 companion, up to 25 mi / 40 km. Amenities for your patients and room for luggage or medical support equipment.',
     'faq.3.q': 'Do you serve airports, hotels and hospitals?',
@@ -117,24 +105,18 @@ const EN = {
     'faq.5.q': 'Do you operate at night or on weekends?',
     'faq.5.a': 'Yes. We\'re available 24 hours a day, 7 days a week, to meet medical schedules and flights at any hour.',
     'faq.6.q': 'How do I book my ride?',
-    'faq.6.a': 'Message us on WhatsApp at +52 664 375 2622 or fill out the form on this page. We\'ll confirm rate, schedule and pickup point with you.',
-    'cta.eyebrow': 'Book your ride', 'cta.title': 'Ready to travel without worrying about the <span class="grad">clock</span>?',
-    'cta.lead': 'Message us and we\'ll confirm rate, schedule and pickup point. No commitment.',
+    'faq.6.a': 'Message us on WhatsApp at +52 664 375 2622. We\'ll confirm rate, schedule and pickup point with you.',
+    'cta.eyebrow': 'Get a quote', 'cta.title': 'Does your clinic, hospital or company need <span class="grad">reliable</span> transportation?',
+    'cta.lead': 'Message us on WhatsApp and we\'ll confirm rate, schedule and pickup point. No commitment.',
     'cta.c1': 'Direct WhatsApp', 'cta.c2': 'Email', 'cta.c4': 'Base of operations',
-    'form.title': 'Request your ride', 'form.sub': 'Fill in your details and continue on WhatsApp: your request arrives ready to send.',
-    'form.name': 'Full name', 'form.err.name': 'Please enter your name.', 'form.phone': 'Phone / WhatsApp', 'form.err.phone': 'Enter a valid number.',
-    'form.service': 'Service', 'form.opt.select': 'Select an option', 'form.opt.other': 'Other / not sure', 'form.err.service': 'Choose a service.',
-    'form.route': 'Route', 'form.r1': 'San Diego → Tijuana', 'form.r2': 'Tijuana → San Diego', 'form.r3': 'Round trip SD ⇄ TJ', 'form.r4': 'Other / to be defined',
-    'form.date': 'Trip date', 'form.pax': 'People', 'form.msg': 'Tell us more (optional)', 'form.submit': 'Yes, I want to book my ride',
-    'form.note': 'WhatsApp will open with your request ready to send. We reply 24/7.',
-    'form.ok.t': 'Done! We opened WhatsApp.', 'form.ok.a': 'Didn\'t open? Tap here to continue.',
+    'cta.card.t': 'Message us on WhatsApp', 'cta.card.p': 'It\'s the fastest way to get a quote. Tell us about your ride and we\'ll reply 24 hours a day.',
+    'cta.card.btn': 'Write on WhatsApp', 'cta.card.note': 'Quick replies, 24/7.',
     'ft.blurb': 'Medical and private transportation between San Diego and Tijuana. Your time is our priority.',
     'ft.h1': 'Services', 'ft.h2': 'Company', 'ft.l1': 'About us', 'ft.l2': 'Why TAK', 'ft.h3': 'Help', 'ft.l3': 'FAQ',
     'ft.rights': 'All rights reserved.', 'ft.top': 'Back to top',
     'wa.tip': 'Need a ride? Message us', 'wa.aria': 'Message us on WhatsApp',
     /* atributos */
-    'nav.menu': 'Open menu', 'est.minus': 'Fewer patients', 'est.plus': 'More patients',
-    'form.name.ph': 'e.g. Maria Lopez', 'form.phone.ph': '+1 619 000 0000', 'form.msg.ph': 'e.g. Dental clinic appointment at 9:00 am, we land at SAN at 7:30.',
+    'nav.menu': 'Open menu',
     'xp.alt': 'White SUV from the TAK On Time fleet, ready to pick up its passengers',
     'svc.1.alt': 'Modern, fully equipped operating room, a common destination for medical transportation',
     'svc.2.alt': 'Dentist treating a patient at a medical tourism clinic',
@@ -145,23 +127,18 @@ const EN = {
     'why.3.alt': 'Staff cleaning and disinfecting the inside of a vehicle'
 };
 
-/* Cadenas que sólo usa el JS (preloader, estimador, mensajes de WhatsApp…) */
+/* Cadenas que sólo usa el JS (preloader, mensajes de WhatsApp…) */
 const T = {
     es: {
         title: 'TAK On Time | Transporte Médico San Diego ⇄ Tijuana 24/7',
         desc: 'Transporte médico, turismo médico y traslados privados entre San Diego y Tijuana en SUVs sanitizadas, con choferes bilingües. Servicio 24/7 y aeropuertos SAN / TIJ. Cotiza por WhatsApp.',
         loader: ['Calibrando ruta San Diego ⇄ Tijuana…', 'Sanitizando unidades…', 'Verificando disponibilidad 24/7…', 'Todo listo. ¡Buen viaje!'],
-        one: 'Viaje sencillo', round: 'Ida y vuelta', pass: 'Pase médico', patient: 'paciente', patients: 'pacientes',
-        estMsg: 'Hola TAK, quiero cotizar: {trip}, {n} {p}{pass}. Estimado de referencia: ${total} USD.', withPass: ' con pase médico',
-        formHi: 'Hola TAK On Time 👋\nQuiero reservar un traslado:', fName: 'Nombre', fPhone: 'Teléfono', fService: 'Servicio', fRoute: 'Ruta', fDate: 'Fecha', fPax: 'Personas', fNotes: 'Notas',
-        routes: { sdtj: 'San Diego → Tijuana', tjsd: 'Tijuana → San Diego', round: 'Ida y vuelta SD ⇄ TJ', other: 'Otra / por definir' },
         wa: {
-            hero: 'Hola TAK On Time, quiero reservar mi traslado.', nav: 'Hola TAK On Time, quiero información para reservar un traslado.',
+            hero: 'Hola TAK On Time, quiero solicitar una cotización de traslados.', nav: 'Hola TAK On Time, quiero información para reservar un traslado.',
             man: 'Hola TAK, quiero platicar sobre mi viaje.', fleet: 'Hola TAK, quiero viajar en una de sus unidades.',
             svc: 'Hola TAK, me interesa el servicio: {s}.', 'svc-end': 'Hola TAK, quiero armar mi ruta.',
             why: 'Hola TAK, estoy listo para viajar con ustedes.', proc: 'Hola TAK, quiero empezar mi reserva.', cov: 'Hola TAK, ¿llegan a mi zona?',
-            price1: 'Hola TAK, quiero un viaje sencillo SD - TJ ($85 USD).', price2: 'Hola TAK, quiero un viaje ida y vuelta SD - TJ ($130 USD).',
-            price3: 'Hola TAK, tengo dudas sobre el pase médico.', faq: 'Hola TAK, tengo una pregunta.',
+            faq: 'Hola TAK, tengo una pregunta.',
             contact: 'Hola TAK On Time, quiero informes.', float: 'Hola TAK On Time, quiero informes.'
         }
     },
@@ -169,17 +146,12 @@ const T = {
         title: 'TAK On Time | Medical Transportation San Diego ⇄ Tijuana 24/7',
         desc: 'Medical transportation, medical tourism and private rides between San Diego and Tijuana in sanitized SUVs with bilingual drivers. 24/7 service and SAN / TIJ airports. Get a quote on WhatsApp.',
         loader: ['Calibrating San Diego ⇄ Tijuana route…', 'Sanitizing vehicles…', 'Checking 24/7 availability…', 'All set. Have a great trip!'],
-        one: 'One-way trip', round: 'Round trip', pass: 'Medical pass', patient: 'patient', patients: 'patients',
-        estMsg: 'Hello TAK, I would like a quote: {trip}, {n} {p}{pass}. Reference estimate: ${total} USD.', withPass: ' with medical pass',
-        formHi: 'Hello TAK On Time 👋\nI would like to book a ride:', fName: 'Name', fPhone: 'Phone', fService: 'Service', fRoute: 'Route', fDate: 'Date', fPax: 'People', fNotes: 'Notes',
-        routes: { sdtj: 'San Diego → Tijuana', tjsd: 'Tijuana → San Diego', round: 'Round trip SD ⇄ TJ', other: 'Other / to be defined' },
         wa: {
-            hero: 'Hello TAK On Time, I would like to book my ride.', nav: 'Hello TAK On Time, I would like information to book a ride.',
+            hero: 'Hello TAK On Time, I would like to request a quote for transportation.', nav: 'Hello TAK On Time, I would like information to book a ride.',
             man: 'Hello TAK, I would like to talk about my trip.', fleet: 'Hello TAK, I would like to ride in one of your vehicles.',
             svc: 'Hello TAK, I am interested in the service: {s}.', 'svc-end': 'Hello TAK, I would like to plan my route.',
             why: 'Hello TAK, I am ready to travel with you.', proc: 'Hello TAK, I would like to start my booking.', cov: 'Hello TAK, do you serve my area?',
-            price1: 'Hello TAK, I would like a one-way SD - TJ ride ($85 USD).', price2: 'Hello TAK, I would like a round-trip SD - TJ ride ($130 USD).',
-            price3: 'Hello TAK, I have questions about the medical pass.', faq: 'Hello TAK, I have a question.',
+            faq: 'Hello TAK, I have a question.',
             contact: 'Hello TAK On Time, I would like information.', float: 'Hello TAK On Time, I would like information.'
         }
     }
@@ -224,7 +196,6 @@ function applyLang(next, opts = {}) {
 
     $$('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
     refreshWA();
-    updateEstimator(true);
     syncProcessTitle();
 }
 
@@ -234,7 +205,6 @@ function refreshWA() {
         const k = a.dataset.wa;
         let msg = null;
         if (k === 'svc') msg = tt().wa.svc.replace('{s}', plain(t('svc.' + a.dataset.svc + '.t')));
-        else if (k === 'est') msg = estimateMessage();
         else msg = tt().wa[k];
         if (msg) a.href = waUrl(msg);
     });
@@ -366,7 +336,7 @@ function initAnchors() {
 /* Efectos globales ligados al scroll: barra, nav, parallax del hero, botón flotante */
 function initGlobalScroll() {
     const bar = $('#scroll-progress'), nav = $('#nav'), wa = $('#wa-float');
-    const heroInner = $('.hero-inner'), heroBg = $('.hero-bg');
+    const hero = $('#inicio'), heroInner = $('.hero-inner'), heroBg = $('.hero-bg');
     let prev = 0, hidden = false, tipShown = false;
     ticks.push((dt, y) => {
         const max = document.documentElement.scrollHeight - innerHeight;
@@ -382,8 +352,10 @@ function initGlobalScroll() {
         if (showWA && !tipShown) { tipShown = true; setTimeout(() => wa.classList.add('show-tip'), 1800); setTimeout(() => wa.classList.remove('show-tip'), 9000); }
         if (y < innerHeight * 1.15 && !reduce) {
             const p = clamp(y / innerHeight);
-            heroInner.style.transform = `translate3d(0,${(p * 70).toFixed(1)}px,0)`;
-            heroInner.style.opacity = (1 - p * 1.1).toFixed(3);
+            // En móvil el hero (texto + tarjeta apilados) es más alto que la pantalla: si se desvaneciera, la tarjeta quedaría casi invisible al llegar a ella
+            const fades = hero.offsetHeight <= innerHeight * 1.2;
+            heroInner.style.transform = fades ? `translate3d(0,${(p * 70).toFixed(1)}px,0)` : '';
+            heroInner.style.opacity = fades ? (1 - p * 1.1).toFixed(3) : '';
             heroBg.style.transform = `translate3d(0,${(p * 120).toFixed(1)}px,0) scale(${(1 + p * .08).toFixed(3)})`;
         }
     });
@@ -414,7 +386,7 @@ function initNav() {
         links.forEach(l => l.classList.remove('is-active'));
         const l = map.get('#' + e.target.id); if (l) l.classList.add('is-active');
     }), { rootMargin: '-45% 0px -50% 0px' });
-    ['servicios', 'flota', 'proceso', 'tarifas', 'contacto'].forEach(id => { const s = document.getElementById(id); if (s) io.observe(s); });
+    ['servicios', 'flota', 'proceso', 'contacto'].forEach(id => { const s = document.getElementById(id); if (s) io.observe(s); });
 }
 
 /* ───────── 06 · CURSOR, TILT, IMANES ───────── */
@@ -835,46 +807,7 @@ function countUp(stat) {
     requestAnimationFrame(step);
 }
 
-/* ───────── 14 · ESTIMADOR · FAQ · FORMULARIO → WHATSAPP ───────── */
-const PRICE = { one: 85, round: 130, pass: 60 };        // USD por paciente (tarifario oficial)
-const est = { trip: 'one', pax: 1, pass: false, shown: 85, raf: 0 };
-const estTotal = () => (PRICE[est.trip] + (est.pass ? PRICE.pass : 0)) * est.pax;
-function estimateMessage() {
-    const L = tt();
-    return L.estMsg
-        .replace('{trip}', est.trip === 'round' ? L.round : L.one)
-        .replace('{n}', est.pax).replace('{p}', est.pax === 1 ? L.patient : L.patients)
-        .replace('{pass}', est.pass ? L.withPass : '').replace('{total}', estTotal());
-}
-function updateEstimator(instant) {
-    const totalEl = $('#est-total');
-    if (!totalEl) return;
-    const L = tt(), total = estTotal();
-    let lines = `<li><span>${est.trip === 'round' ? L.round : L.one} × ${est.pax}</span><b>$${PRICE[est.trip] * est.pax}</b></li>`;
-    if (est.pass) lines += `<li><span>${L.pass} × ${est.pax}</span><b>$${PRICE.pass * est.pax}</b></li>`;
-    $('#est-lines').innerHTML = lines;
-    $('#pax-out').textContent = est.pax;
-    $('#est-cta').href = waUrl(estimateMessage());
-    const from = est.shown; est.shown = total;
-    cancelAnimationFrame(est.raf);
-    if (instant || reduce) { totalEl.textContent = total; return; }
-    const t0 = performance.now();
-    const step = now => {
-        const p = clamp((now - t0) / 560);
-        totalEl.textContent = Math.round(lerp(from, total, easeOut(p)));
-        if (p < 1) est.raf = requestAnimationFrame(step);
-    };
-    est.raf = requestAnimationFrame(step);
-}
-function initEstimator() {
-    if (!$('#est')) return;
-    $$('input[name="trip"]').forEach(r => r.addEventListener('change', () => { est.trip = r.value; updateEstimator(); }));
-    $('#pax-minus').addEventListener('click', () => { est.pax = Math.max(1, est.pax - 1); updateEstimator(); });
-    $('#pax-plus').addEventListener('click', () => { est.pax = Math.min(6, est.pax + 1); updateEstimator(); });
-    $('#est-pass').addEventListener('change', e => { est.pass = e.target.checked; updateEstimator(); });
-    updateEstimator(true);
-}
-
+/* ───────── 14 · FAQ ───────── */
 function initFAQ() {
     const items = $$('.qa');
     const open = (qa, on) => { qa.classList.toggle('is-open', on); $('.qa-q', qa).setAttribute('aria-expanded', String(on)); };
@@ -884,35 +817,6 @@ function initFAQ() {
         if (willOpen) open(qa, true);
     }));
     if (items[0]) open(items[0], true);
-}
-
-function initForm() {
-    const form = $('#book-form');
-    if (!form) return;
-    const d = new Date();
-    $('#f-date').min = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-    const setErr = (input, bad) => input.closest('.f').classList.toggle('has-error', bad);
-    ['f-name', 'f-phone', 'f-service'].forEach(id => $('#' + id).addEventListener('input', e => setErr(e.target, false)));
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const name = $('#f-name'), phone = $('#f-phone'), service = $('#f-service');
-        const bad = { name: name.value.trim().length < 2, phone: phone.value.replace(/\D/g, '').length < 8, service: !service.value };
-        setErr(name, bad.name); setErr(phone, bad.phone); setErr(service, bad.service);
-        if (bad.name || bad.phone || bad.service) { (bad.name ? name : bad.phone ? phone : service).focus(); return; }
-        const L = tt(), date = $('#f-date').value, pax = $('#f-pax').value, notes = $('#f-msg').value.trim();
-        const lines = [L.formHi,
-            `• ${L.fName}: ${name.value.trim()}`,
-            `• ${L.fPhone}: ${phone.value.trim()}`,
-            `• ${L.fService}: ${plain(service.selectedOptions[0].textContent)}`,
-            `• ${L.fRoute}: ${L.routes[$('#f-route').value]}`];
-        if (date) lines.push(`• ${L.fDate}: ${date}`);
-        if (pax) lines.push(`• ${L.fPax}: ${pax}`);
-        if (notes) lines.push(`• ${L.fNotes}: ${notes}`);
-        const url = waUrl(lines.join('\n'));
-        $('#f-ok-link').href = url;
-        $('#f-ok').hidden = false;
-        window.open(url, '_blank', 'noopener');
-    });
 }
 
 /* Si el navegador está en inglés, ofrecemos cambiar (sin alterar el HTML que indexan los buscadores) */
@@ -946,7 +850,7 @@ function init() {
     initRoute(); initClock(); initDial(); initDispatchTilt();
     new IntersectionObserver(([e]) => { heroOn = e.isIntersecting; }, { rootMargin: '120px' }).observe($('#inicio'));
     initManifesto(); initExpand(); initHScroll(); initProcess();
-    initEstimator(); initFAQ(); initForm(); initLangToast();
+    initFAQ(); initLangToast();
 
     startLoop();
     runLoader(startHero);
